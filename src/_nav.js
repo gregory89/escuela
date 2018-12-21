@@ -1,7 +1,7 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
+      name: 'GsaX',
       url: '/dashboard',
       icon: 'icon-speedometer',
       badge: {
@@ -9,25 +9,8 @@ export default {
         text: 'NEW'
       }
     },
-    {
-      title: true,
-      name: 'Theme',
-      class: '',
-      wrapper: {
-        element: '',
-        attributes: {}
-      }
-    },
-    {
-      name: 'Colors',
-      url: '/theme/colors',
-      icon: 'icon-drop'
-    },
-    {
-      name: 'Typography',
-      url: '/theme/typography',
-      icon: 'icon-pencil'
-    },
+
+
     {
       title: true,
       name: 'Components',
@@ -125,9 +108,9 @@ export default {
       ]
     },
     {
-      name: 'Buttons',
+      name: 'Registro',
       url: '/buttons',
-      icon: 'icon-cursor',
+      icon: 'fa fa-tasks',
       children: [
         {
           name: 'Buttons',
@@ -152,26 +135,26 @@ export default {
       ]
     },
     {
-      name: 'Charts',
+      name: 'Docente',
       url: '/charts',
-      icon: 'icon-pie-chart'
+      icon: 'fa fa-graduation-cap'
     },
     {
-      name: 'Icons',
+      name: 'Administracion',
       url: '/icons',
-      icon: 'icon-star',
+      icon: 'fa fa-cogs',
       children: [
         {
-          name: 'CoreUI Icons',
+          name: 'Inscripción',
           url: '/icons/coreui-icons',
-          icon: 'icon-star',
+          icon: 'icon-folder',
           badge: {
             variant: 'info',
             text: 'NEW'
           }
         },
         {
-          name: 'Flags',
+          name: 'Nuevas Asignaturas',
           url: '/icons/flags',
           icon: 'icon-star'
         },
@@ -266,20 +249,6 @@ export default {
       },
       attributes: { disabled: true },
     },
-    {
-      name: 'Download CoreUI',
-      url: 'http://coreui.io/vue/',
-      icon: 'icon-cloud-download',
-      class: 'mt-auto',
-      variant: 'success',
-      attributes: { target: '_blank', rel: 'noopener' }
-    },
-    {
-      name: 'Try CoreUI PRO',
-      url: 'http://coreui.io/pro/vue/',
-      icon: 'icon-layers',
-      variant: 'danger',
-      attributes: { target: '_blank', rel: 'noopener' }
-    },
+
   ]
 }

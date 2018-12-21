@@ -8,24 +8,23 @@
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg" />
       <b-navbar-nav class="d-md-down-none">
-        <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
-        <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
-        <b-nav-item class="px-3">Settings</b-nav-item>
+        <b-nav-item class="px-3" to="/dashboard">GsaX</b-nav-item>
+        <b-nav-item class="px-3" to="/users" exact></b-nav-item>
+
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item class="d-md-down-none">
-          <i class="icon-bell"></i>
-          <b-badge pill variant="danger">5</b-badge>
-        </b-nav-item>
+
+          <b-badge pill variant="danger"></b-badge>
+
         <b-nav-item class="d-md-down-none">
           <i class="icon-list"></i>
         </b-nav-item>
-        <b-nav-item class="d-md-down-none">
-          <i class="icon-location-pin"></i>
+        <b-nav-item class="">
+          <i class=" "></i>
         </b-nav-item>
         <DefaultHeaderDropdownAccnt/>
       </b-navbar-nav>
-      <AsideToggler class="d-none d-lg-block" />
+      <AsideToggler class="" />
       <!--<AsideToggler class="d-lg-none" mobile />-->
     </AppHeader>
     <div class="app-body">
@@ -50,12 +49,12 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="https://coreui.io">CoreUI</a>
-        <span class="ml-1">&copy; 2018 creativeLabs.</span>
+        <a href="https://coreui.io"></a>
+        <span class="ml-1">&copy; GsaX.</span>
       </div>
       <div class="ml-auto">
-        <span class="mr-1">Powered by</span>
-        <a href="https://coreui.io">CoreUI for Vue</a>
+        <span class="mr-1"></span>
+        <a href="https://coreui.io"></a>
       </div>
     </TheFooter>
   </div>
