@@ -42,7 +42,7 @@
                 <label >Curso</label>
                 <b-form-select id="Curso"
                                :plain="true"
-                               :options="[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]">
+                               :options="">
 
 
                 </b-form-select>
@@ -71,10 +71,38 @@
        </b-col>
     </b-row>
   </div>
-</template>
+  </template>
 
 <script>
-export default {
-  name: 'button-groups'
-}
+
+  import {mapActions, mapGetters} from 'vuex'
+  export default {
+    name: 'button-groups',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App',
+      }
+    },
+    methods: {
+      ...mapActions(['getCursos']),
+      ...mapActions(['getEstudiantes']),
+      ...mapActions(['getMateria']),
+      ...mapActions(['postCursos']),
+      ...mapActions(['getdocente'])
+    },
+
+    computed: {
+      ...mapGetters(['cursosarray']),
+      ...mapGetters(['estudiantesarray']),
+      ...mapGetters(['materiasarray']),
+      ...mapGetters(['docentesarray'])
+    },
+    created () {
+      this.getCursos(),
+        this.getEstudiantes()
+      this.getMateria()
+      this.getdocente()
+    }
+  }
+
 </script>

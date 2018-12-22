@@ -58,7 +58,7 @@ const Register = () => import('@/views/pages/Register')
 const Users = () => import('@/views/users/Users')
 const User = () => import('@/views/users/User')
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'hash', // https://router.vuejs.org/api/#mode

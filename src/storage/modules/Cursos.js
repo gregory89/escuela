@@ -16,6 +16,7 @@ const mutations = {
   async listarCursos (state) {
     await axios.get(state.endpoints.curso).then((response) => {
       state.cursosarray = response.data
+      console.log(response.data)
     }).catch(error => {
       state.cursosarray = []
     })
