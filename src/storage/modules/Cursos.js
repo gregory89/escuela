@@ -9,7 +9,7 @@ const state = {
   },
   cursosarray: [],
   cursosalvar: []
-}
+};
 
 const mutations = {
 /** Cursos**/
@@ -26,13 +26,13 @@ const mutations = {
       Codigo: 'SOC'
     } ).then((response) => {
       state.cursosalvar = response
-    }).catch(error => {
+    }).catch(error=> {
       state.cursosalvar = []
     })
 
   }
 
-}
+};
 
 const actions = {
   /* Curso */
@@ -42,14 +42,14 @@ const actions = {
   postCurso ({commit}) {
     commit('guardarCursos')
   }
-}
+};
 
 
   const getters = {
   cursosarray: (state) => {
     return state.cursosarray
   }
-}
+};
 
 export default {
   state,
