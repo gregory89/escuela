@@ -67,6 +67,7 @@
 
         </b-card>
 
+
        </b-col>
     </b-row>
   </div>

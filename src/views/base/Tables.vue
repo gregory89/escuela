@@ -1,25 +1,78 @@
 <template>
   <div class="animated fadeIn">
-
     <b-row>
-      <b-col lg="6">
-        <c-table :table-data="items" :fields="fields" caption="<i class='fa fa-align-justify'></i> Simple Table"></c-table>
-      </b-col>
+      <b-col md="12">
+        <b-card>
 
-      <b-col lg="6">
-        <c-table :table-data="items" striped caption="<i class='fa fa-align-justify'></i> Striped Table"></c-table>
-      </b-col>
-    </b-row><!--/.row-->
+          <div slot="header">
+            <strong>Registro </strong>
+          </div>
+          <b-row>
+            <b-col sm="4">
+              <b-form-group >
+                <label >Periodo Escolar</label>
+                <b-form-select id="Periodo"
+                               :plain="true"
+                               :options="[1,2,3,4,5, ]">
+                </b-form-select>
 
-    <b-row>
-      <b-col lg="6">
-        <c-table :table-data="items" small caption="<i class='fa fa-align-justify'></i> Condensed Table"></c-table>
-      </b-col>
+                <label >Seccion</label>
+                <b-form-select id="Seccion"
+                               :plain="true"
+                               :options="[1,2,3,4,5, ]">
+                </b-form-select>
 
-      <b-col lg="6">
-        <c-table :table-data="items" fixed bordered caption="<i class='fa fa-align-justify'></i> Bordered Table"></c-table>
+
+              </b-form-group>
+            </b-col>
+
+            <b-col sm="4">
+              <b-form-group>
+                <label >Nivel Esccolar</label>
+                <b-form-select id="Nivel"
+                               :plain="true"
+                               :options="[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]">
+                </b-form-select>
+
+              </b-form-group>
+            </b-col>
+            <b-col sm="4">
+              <b-form-group>
+                <label >Curso</label>
+                <b-form-select id="Curso"
+                               :plain="true"
+                               :options="[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]">
+
+
+                </b-form-select>
+              </b-form-group>
+
+
+            </b-col>
+          </b-row>
+          <!--nombre-->
+          <b-input-group class="mb-2">
+            <b-input-group-prepend>
+              <b-input-group-text><i class="fa fa-search"></i></b-input-group-text>
+            </b-input-group-prepend>
+            <b-form-input type="text" class="form-control" placeholder="Nombre" autocomplete="username"  />
+
+
+          </b-input-group>
+          <div slot="footer">
+            <b-button type="submit" size="sm" variant="primary"><i class="fa fa-dot-circle-o"></i> Buscar</b-button>
+
+          </div>
+
+        </b-card>
+
+
       </b-col>
     </b-row>
+
+
+
+
 
     <b-row>
       <b-col sm="12">
@@ -40,31 +93,8 @@ import { shuffleArray } from '@/shared/utils'
 import cTable from './Table.vue'
 
 const someData = () => shuffleArray([
-  {username: 'Samppa Nori', registered: '2012/01/01', role: 'Member', status: 'Active', _rowVariant: 'success'},
-  {username: 'Estavan Lykos', registered: '2012/02/01', role: 'Staff', status: 'Banned', _rowVariant: 'danger'},
-  {username: 'Chetan Mohamed', registered: '2012/02/01', role: 'Admin', status: 'Inactive', _rowVariant: 'info'},
-  {username: 'Derick Maximinus', registered: '2012/03/01', role: 'Member', status: 'Pending'},
-  {username: 'Friderik Dávid', registered: '2012/01/21', role: 'Staff', status: 'Active'},
-  {username: 'Yiorgos Avraamu', registered: '2012/01/01', role: 'Member', status: 'Active'},
-  {username: 'Avram Tarasios', registered: '2012/02/01', role: 'Staff', status: 'Banned'},
-  {username: 'Quintin Ed', registered: '2012/02/01', role: 'Admin', status: 'Inactive'},
-  {username: 'Enéas Kwadwo', registered: '2012/03/01', role: 'Member', status: 'Pending'},
-  {username: 'Agapetus Tadeáš', registered: '2012/01/21', role: 'Staff', status: 'Active'},
-  {username: 'Carwyn Fachtna', registered: '2012/01/01', role: 'Member', status: 'Active'},
-  {username: 'Nehemiah Tatius', registered: '2012/02/01', role: 'Staff', status: 'Banned'},
-  {username: 'Ebbe Gemariah', registered: '2012/02/01', role: 'Admin', status: 'Inactive'},
-  {username: 'Eustorgios Amulius', registered: '2012/03/01', role: 'Member', status: 'Pending'},
-  {username: 'Leopold Gáspár', registered: '2012/01/21', role: 'Staff', status: 'Active'},
-  {username: 'Pompeius René', registered: '2012/01/01', role: 'Member', status: 'Active'},
-  {username: 'Paĉjo Jadon', registered: '2012/02/01', role: 'Staff', status: 'Banned'},
-  {username: 'Micheal Mercurius', registered: '2012/02/01', role: 'Admin', status: 'Inactive'},
-  {username: 'Ganesha Dubhghall', registered: '2012/03/01', role: 'Member', status: 'Pending'},
-  {username: 'Hiroto Šimun', registered: '2012/01/21', role: 'Staff', status: 'Active'},
-  {username: 'Vishnu Serghei', registered: '2012/01/01', role: 'Member', status: 'Active'},
-  {username: 'Zbyněk Phoibos', registered: '2012/02/01', role: 'Staff', status: 'Banned'},
-  {username: 'Einar Randall', registered: '2012/02/01', role: 'Admin', status: 'Inactive'},
-  {username: 'Félix Troels', registered: '2012/03/21', role: 'Staff', status: 'Active'},
-  {username: 'Aulus Agmundr', registered: '2012/01/01', role: 'Member', status: 'Pending'}
+  {Codigo: 'Samppa Nori', Estudiante: '2012/01/01', role: 'Member', status: 'Active', _rowVariant: 'success'},
+
 ])
 
 export default {
