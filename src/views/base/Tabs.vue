@@ -1,171 +1,126 @@
 <template>
-  <div class="animated fadeIn">
-    <b-row>
-      <b-col xs="12" lg="6">
-        <b-card>
-          <div slot="header">
-            Tabs
-          </div>
-          <b-tabs>
-            <b-tab title="Home" active>
-              <br> 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab title="Profile" >
-              <br>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab title="Disabled" disabled>
-              <br>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-          </b-tabs>
-        </b-card>
-      </b-col>
-      <b-col xs="12" lg="6">
-        <b-card>
-          <div slot="header">
-            Tabs with icons
-          </div>
-          <b-tabs>
-            <b-tab active>
-              <template slot="title">
-                <i class="icon-calculator"></i>
-              </template>
-              <br> 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab>
-              <template slot="title">
-                <i class="icon-basket-loaded"></i>
-              </template>
-              <br>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab>
-              <template slot="title">
-                <i class="icon-pie-chart"></i>
-              </template>
-              <br>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-          </b-tabs>
-        </b-card>
-      </b-col>
-      <b-col xs="12" lg="6">
-        <b-card>
-          <div slot="header">
-            Tabs with icons
-          </div>
-          <b-tabs v-model="tabIndex[0]">
-            <b-tab active>
-              <template slot="title">
-                <i class="icon-calculator"></i> {{tabs[0]}}
-              </template>
-              <br> 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab>
-              <template slot="title">
-                <i class="icon-basket-loaded"></i> {{tabs[1]}}
-              </template>
-              <br>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab>
-              <template slot="title">
-                <i class="icon-pie-chart"></i> {{tabs[2]}}
-              </template>
-              <br>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-          </b-tabs>
-        </b-card>
-      </b-col>
-      <b-col xs="12" lg="6">
-        <b-card>
-          <div slot="header">
-            Tabs vertical
-          </div>
-          <b-card no-body>
-          <b-tabs card pills vertical nav-wrapper-class="w-40" v-model="tabIndex[1]">
-            <b-tab active>
-              <template slot="title">
-                <i class="icon-calculator"></i> {{tabs[0]}}
-              </template>
-              1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab>
-              <template slot="title">
-                <i class="icon-basket-loaded"></i> {{tabs[1]}}
-              </template>
-              2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-            <b-tab>
-              <template slot="title">
-                <i class="icon-pie-chart"></i> {{tabs[2]}}
-              </template>
-              3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </b-tab>
-          </b-tabs>
-          </b-card>
-        </b-card>
-      </b-col>
-    </b-row>
-  </div>
+<div class="animated fadeIn">
+
+  <b-row>
+
+    <b-col md="12">
+      <b-card>
+
+
+        <div slot="header">
+
+          <i class="fa fa-graduation-cap"></i> Profesor
+
+        </div>
+        <b-row>
+          <b-col sm="4">
+            <b-form-group >
+              <b-input-group-text><i class="fa fa-graduation-cap"> Docente</i></b-input-group-text>
+
+              <b-form-select id="Periodo"
+
+                             :plain="true"
+                             :options="[1,2,3,4,5, ]">
+              </b-form-select>
+
+            </b-form-group>
+          </b-col>
+
+          <b-col sm="4">
+            <b-form-group>
+
+              <b-input-group-text><i class="fa fa-line-chart"> Nivel Escolar</i></b-input-group-text>
+              <b-form-select id="Nivel"
+                             :plain="true"
+                             :options="[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]">
+              </b-form-select>
+
+            </b-form-group>
+          </b-col>
+
+
+
+
+
+
+
+
+
+
+
+          <b-col sm="4">
+            <b-form-group>
+
+              <b-input-group-text><i class="fa fa-object-group"> Curso</i></b-input-group-text>
+              <b-form-select id="Nivel"
+                             :plain="true"
+                             :options="[2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]">
+              </b-form-select>
+
+            </b-form-group>
+          </b-col>
+        </b-row>
+
+
+
+        <!--nombre-->
+        <b-input-group class="mb-2">
+          <b-input-group-prepend>
+            <b-button variant="primary">Buscar</b-button>
+          </b-input-group-prepend>
+          <b-form-input type="text" class="form-control" placeholder="Nombre" autocomplete="username"  />
+          <b-row>
+            <b-col sm="12">
+              <c-table :table-data="itemsArray" :per-page=10 hover striped bordered small fixed caption=""></c-table>
+            </b-col>
+          </b-row>
+
+
+
+        </b-input-group>
+
+
+
+
+      </b-card>
+
+
+
+    </b-col>
+  </b-row>
+
+
+
+
+
+
+</div>
+
 </template>
 
 <script>
-export default {
-  name: 'tabs',
-  data () {
-    return {
-      tabIndex: [0, 0],
-      tabs: [
-        'Calculator',
-        'Shopping cart',
-        'Charts'
-      ]
+  import { shuffleArray } from '@/shared/utils'
+  import cTable from './Table'
+
+  const someData = () => shuffleArray([
+    {Codigo: 'Samppa Nori', Estudiante: '2012/01/01', role: 'Member', status: 'Active', _rowVariant: 'success'},
+
+  ])
+
+  export default {
+    name: 'base',
+    components: {cTable},
+    data: () => {
+      return {
+        items: someData,
+        itemsArray: someData(),
+        fields: [
+          {key: 'username', label: 'User', sortable: true},
+          {key: 'registered'},
+          {key: 'role'},
+          {key: 'status', sortable: true}
+        ],
+      }
     }
   }
-}
 </script>

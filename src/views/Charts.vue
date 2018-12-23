@@ -13,7 +13,7 @@
             <b-input-group-prepend>
               <b-input-group-text><i class="fa fa-user"></i></b-input-group-text>
             </b-input-group-prepend>
-            <b-form-input type="text" class="form-control" placeholder="Nombre" autocomplete="username"  />
+            <b-form-input type="text"  class="form-control" placeholder="Nombre" autocomplete="username"  />
           </b-input-group>
 
           <b-input-group class="mb-3">

@@ -6,7 +6,7 @@ export default {
       icon: 'icon-speedometer',
       badge: {
         variant: 'primary',
-        text: 'NEW'
+        text: ''
       }
     },
 
@@ -21,119 +21,36 @@ export default {
       }
     },
     {
-      name: 'Base',
+      name: 'Registro',
       url: '/base',
-      icon: 'icon-puzzle',
+      icon: 'fa fa-tasks',
       children: [
-        {
-          name: 'Breadcrumbs',
-          url: '/base/breadcrumbs',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Cards',
-          url: '/base/cards',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Carousels',
-          url: '/base/carousels',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Collapses',
-          url: '/base/collapses',
-          icon: 'icon-puzzle'
-        },
+
+
         {
           name: 'Forms',
           url: '/base/forms',
           icon: 'icon-puzzle'
         },
+
         {
-          name: 'Jumbotrons',
-          url: '/base/jumbotrons',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'List Groups',
-          url: '/base/list-groups',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Navs',
-          url: '/base/navs',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Navbars',
-          url: '/base/navbars',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Paginations',
-          url: '/base/paginations',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Popovers',
-          url: '/base/popovers',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Progress Bars',
-          url: '/base/progress-bars',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Switches',
-          url: '/base/switches',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Tables',
+          name: 'Estudiante',
           url: '/base/tables',
-          icon: 'icon-puzzle'
+          icon: 'icon-people'
         },
         {
-          name: 'Tabs',
+          name: 'Profesor',
           url: '/base/tabs',
-          icon: 'icon-puzzle'
+          icon: 'fa fa-graduation-cap'
         },
         {
-          name: 'Tooltips',
+          name: 'Padres',
           url: '/base/tooltips',
-          icon: 'icon-puzzle'
+          icon: 'icon-user-follow'
         }
       ]
     },
-    {
-      name: 'Registro',
-      url: '/buttons',
-      icon: 'fa fa-tasks',
-      children: [
-        {
-          name: 'Buttons',
-          url: '/buttons/standard-buttons',
-          icon: 'icon-cursor'
-        },
-        {
-          name: 'Button Dropdowns',
-          url: '/buttons/dropdowns',
-          icon: 'icon-cursor'
-        },
-        {
-          name: 'Button Groups',
-          url: '/buttons/button-groups',
-          icon: 'icon-cursor'
-        },
-        {
-          name: 'Brand Buttons',
-          url: '/buttons/brand-buttons',
-          icon: 'icon-cursor'
-        }
-      ]
-    },
+
     {
       name: 'Docente',
       url: '/charts',
@@ -147,7 +64,7 @@ export default {
         {
           name: 'Inscripción',
           url: '/icons/coreui-icons',
-          icon: 'icon-folder',
+          icon: 'icon-note',
           badge: {
             variant: 'info',
             text: 'NEW'
@@ -156,7 +73,11 @@ export default {
         {
           name: 'Nuevas Asignaturas',
           url: '/icons/flags',
-          icon: 'icon-star'
+          icon: 'icon-notebook',
+          badge: {
+            variant: 'primary',
+            text: 'NEW'
+          }
         },
         {
           name: 'Font Awesome',
@@ -173,29 +94,9 @@ export default {
           icon: 'icon-star'
         }
       ]
-    },
-    {
-      name: 'Notifications',
-      url: '/notifications',
-      icon: 'icon-bell',
-      children: [
-        {
-          name: 'Alerts',
-          url: '/notifications/alerts',
-          icon: 'icon-bell'
-        },
-        {
-          name: 'Badges',
-          url: '/notifications/badges',
-          icon: 'icon-bell'
-        },
-        {
-          name: 'Modals',
-          url: '/notifications/modals',
-          icon: 'icon-bell'
-        }
-      ]
-    },
+    }
+    ,
+
     {
       name: 'Widgets',
       url: '/widgets',
